@@ -234,4 +234,79 @@ footer nav a {
     font-weight: bold;
 }
 
+/* Media Quires */
 
+/* Tablet view - 800px */
+@media(max-width: 800px){
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 20px
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .features {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%; 
+
+    }
+    
+    .feature-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 45%;
+    }
+
+    .feature-box button {
+        width: 60%;
+        padding: 10px 10px;
+    }
+}
+
+/* Mobile View - 500px */
+@media(max-width: 550px){
+    .container {
+        width: 100%;
+    }
+    
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    a {
+        padding: 10px;
+    } 
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .boxes {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .features {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-box {
+        width: 90%;
+    }
+}
