@@ -203,6 +203,10 @@ footer nav a {
 }
 
 /* Start of about.html */
+.about {
+    border-bottom: 1px dashed black;
+}
+
 .features {
     display: flex;
     justify-content: center;
@@ -212,9 +216,9 @@ footer nav a {
 }
 
 .feature-box {
-    width: 50%;
-    margin: 20px 0;
-    /* border-bottom: 1px dashed black; */
+    width: 370px;
+    margin: 20px auto;
+    border-bottom: 1px dashed black;
 }
 
 .feature-box h2, p, button {
@@ -223,6 +227,7 @@ footer nav a {
 
 .feature-box button {
     padding: 10px 30px;
+    margin-bottom: 20px;
     border: 2px solid black;
     border-radius: 10px;
     font-size: 15px;
