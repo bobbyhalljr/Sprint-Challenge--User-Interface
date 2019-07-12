@@ -71,6 +71,23 @@ p {
     margin: 0 auto;
 }
 
+header {
+    text-align: center;
+    margin: 20px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 20px auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -104,12 +121,52 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box1 {
+    background: teal;
+}
+
+.box2 {
+    background: gold;
+}
+
+.box3 {
+    background: cadetblue;
+}
+
+.box4 {
+    background: coral;
+}
+
+.box5 {
+    background: crimson;
+}
+
+.box6 {
+    background: forestgreen;
+}
+
+.box7 {
+    background: darkorchid;
+}
+
+.box8 {
+    background: hotpink;
+}
+
+.box9 {
+    background: indigo;
+}
+
+.box10{
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +200,113 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Start of about.html */
+.about {
+    border-bottom: 1px dashed black;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.feature-box {
+    width: 370px;
+    margin: 20px auto;
+    border-bottom: 1px dashed black;
+}
+
+.feature-box h2, p, button {
+    padding: 10px 0;
+}
+
+.feature-box button {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Media Quires */
+
+/* Tablet view - 800px */
+@media(max-width: 800px){
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 20px
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .features {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%; 
+
+    }
+    
+    .feature-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 45%;
+    }
+
+    .feature-box button {
+        width: 60%;
+        padding: 10px 10px;
+    }
+}
+
+/* Mobile View - 500px */
+@media(max-width: 550px){
+    .container {
+        width: 100%;
+    }
+    
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    a {
+        padding: 10px;
+    } 
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .boxes {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .features {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-box {
+        width: 90%;
+    }
 }
